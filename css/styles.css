@@ -64,3 +64,10 @@ footer {
 footer img {
     margin-top: 10px; /* Espaciado superior para el ícono */
 }
+
+@media (max-width: 768px) {
+    footer {
+        margin-bottom: 40px; /* Aumenta el margen inferior solo en dispositivos móviles */
+        padding: 30px 0; /* Ajusta el padding si es necesario */
+    }
+}
