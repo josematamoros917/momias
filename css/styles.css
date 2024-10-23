@@ -1,5 +1,8 @@
 /* imagen de fondo */
 body {
+    font-family: 'Roboto', sans-serif; /* Usar Roboto para el texto principal */
+    display: flex; /* Asegura que el body ocupe toda la ventana */
+    flex-direction: column;
     background-image: url('../img/momias.jpg'); /* Ruta a tu imagen de fondo */
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-position: top; /* Centra la imagen desde la parte superior */
@@ -11,7 +14,7 @@ body {
 
 /* Contenedor para el texto */
 .scroll-container {
-    max-height: 100vh; /* Limita la altura del contenedor de texto */
+    flex: 1; /* Permitir que el contenedor de texto ocupe el espacio restante */
     overflow-y: auto; /* Permite scroll vertical */
     background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
     backdrop-filter: blur(2px); /* Desenfoque de fondo */
@@ -27,11 +30,16 @@ h1, p {
 }
 
 h1 {
+    font-family: 'Playfair Display', serif; /* Usar Playfair Display para el encabezado */
+    font-size: 2.5rem; /* Aumentar el tamaño de la fuente */
+    font-weight: 700; /* Negrita */
     font-size: 2.5rem; /* Aumentar el tamaño de la fuente */
     font-weight: bold; /* Negrita */
 }
 
 p {
+    font-weight: 400; /* Peso normal */
+    line-height: 1.5; /* Aumentar el espacio entre líneas */
     font-size: 1.2rem; /* Tamaño de fuente para párrafos */
 }
 
@@ -39,4 +47,20 @@ p {
 
 .highlight {
     background-color: rgba(193, 193, 147, 0.115); /* Resalta el texto con un color amarillo claro */
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+    padding: 10px 0; /* Espaciado vertical */
+    position: relative; /* Mantiene el footer en el flujo normal */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    bottom: 0; /* Posiciona el footer al final de la página */
+    margin-top: 20px; /* Agrega un margen superior para separación */
+}
+
+footer img {
+    margin-top: 10px; /* Espaciado superior para el ícono */
 }
