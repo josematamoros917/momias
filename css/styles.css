@@ -1,0 +1,42 @@
+/* imagen de fondo */
+body {
+    background-image: url('../img/momias.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: top; /* Centra la imagen desde la parte superior */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    height: 100vh; /* Asegúrate de que el body ocupe toda la altura de la ventana */
+    overflow: hidden; /* Evita que el fondo blanco se vea al hacer scroll */
+}
+
+/* Contenedor para el texto */
+.scroll-container {
+    max-height: 100vh; /* Limita la altura del contenedor de texto */
+    overflow-y: auto; /* Permite scroll vertical */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+    backdrop-filter: blur(2px); /* Desenfoque de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+/* Sombra de texto para mejor legibilidad */
+h1, p {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejor legibilidad */
+}
+
+h1 {
+    font-size: 2.5rem; /* Aumentar el tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+}
+
+p {
+    font-size: 1.2rem; /* Tamaño de fuente para párrafos */
+}
+
+/* jquery */
+
+.highlight {
+    background-color: rgba(255, 255, 0, 0.5); /* Resalta el texto con un color amarillo claro */
+}
